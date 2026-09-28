@@ -1,0 +1,15 @@
+import type { ExchangeListing, ExchangeRequest } from '../types'
+
+export const mockExchanges: ExchangeListing[] = [
+  { id: 'exchange-daa-ml', offeredItem: 'DAA Book', wantedItem: 'Machine Learning Book', description: 'My DAA textbook is clean and full of useful margin notes. Looking for an ML text for next semester.', condition: 'Excellent', images: ['https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=900&q=85'], student: 'Ananya S.', campus: 'North Campus', createdAt: '2026-09-11T10:00:00.000Z', status: 'Pending' },
+  { id: 'exchange-keyboard-monitor', offeredItem: 'Mechanical Keyboard', wantedItem: '24-inch Monitor', description: 'Swapping my compact keyboard for a monitor that can handle design work and late-night study.', condition: 'Like New', images: ['https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=85'], student: 'Kabir N.', campus: 'Arts Campus', createdAt: '2026-09-09T10:00:00.000Z', status: 'Pending' },
+  { id: 'exchange-lab-calculator', offeredItem: 'Engineering Drawing Kit', wantedItem: 'Scientific Calculator', description: 'Both items are in great shape. Happy to meet near the design studio for a quick swap.', condition: 'Good', images: ['https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=900&q=85'], student: 'Rohan P.', campus: 'Design Campus', createdAt: '2026-09-06T10:00:00.000Z', status: 'Accepted' },
+  { id: 'exchange-backpack-jacket', offeredItem: 'Campus Backpack', wantedItem: 'Lightweight Jacket', description: 'A roomy backpack with a laptop sleeve. Looking for a jacket for winter mornings.', condition: 'Good', images: ['https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85'], student: 'Meera V.', campus: 'West Campus', createdAt: '2026-09-03T10:00:00.000Z', status: 'Pending' },
+]
+
+export const mockExchangeRequests: ExchangeRequest[] = [
+  { id: 'request-demo-01', listingId: 'exchange-daa-ml', offeredItem: 'Statistics Notes', requestedItem: 'DAA Book', message: 'I have clear stats notes and would love to swap for your DAA book.', requester: 'You', createdAt: '2026-09-15T10:00:00.000Z', status: 'Pending' },
+  { id: 'request-demo-02', listingId: 'exchange-keyboard-monitor', offeredItem: 'USB-C Hub', requestedItem: 'Mechanical Keyboard', message: 'Would you consider a USB-C hub plus cash-free swap?', requester: 'Sana K.', createdAt: '2026-09-13T10:00:00.000Z', status: 'Accepted' },
+  { id: 'request-demo-03', listingId: 'exchange-backpack-jacket', offeredItem: 'Desk Organizer', requestedItem: 'Campus Backpack', message: 'I was hoping this could work for a smaller desk setup.', requester: 'Mihir T.', createdAt: '2026-09-10T10:00:00.000Z', status: 'Rejected' },
+  { id: 'request-demo-04', listingId: 'exchange-lab-calculator', offeredItem: 'Engineering Drawing Kit', requestedItem: 'Scientific Calculator', message: 'The swap went smoothly after our design studio class.', requester: 'You', createdAt: '2026-08-28T10:00:00.000Z', status: 'Completed' },
+]

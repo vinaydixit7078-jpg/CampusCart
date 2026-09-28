@@ -1,0 +1,6 @@
+import { LockKeyhole } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import type { ReactNode } from 'react'
+import { useAuth } from '../context/AuthContext'
+
+export function ProtectedRoute({ children }: { children: ReactNode }) { const { isAuthenticated } = useAuth(); if (isAuthenticated) return children; return <section className="mx-auto max-w-lg px-5 py-24 text-center"><div className="mx-auto grid size-16 place-items-center rounded-2xl bg-[#e5eee4]"><LockKeyhole size={28} /></div><p className="mt-6 text-xs font-bold uppercase tracking-[.2em] text-[#7c8b80]">Student access</p><h1 className="mt-3 font-['Space_Grotesk'] text-4xl font-bold">Log in to continue</h1><p className="mt-3 text-[#78857c]">Your CampusCart profile keeps your personal activity and demo data together.</p><div className="mt-7 flex justify-center gap-3"><Link to="/login" className="rounded-full bg-[#17221f] px-6 py-3.5 text-sm font-bold text-white">Login</Link><Link to="/register" className="rounded-full border border-[#cbd4ca] px-6 py-3.5 text-sm font-bold text-[#35433c]">Register</Link></div></section> }

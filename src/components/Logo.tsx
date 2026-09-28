@@ -1,0 +1,2 @@
+import { ShoppingBag } from 'lucide-react'
+export function Logo() { return <span className="flex items-center gap-2 font-['Space_Grotesk'] text-xl font-bold tracking-tight"><span className="grid size-9 place-items-center rounded-xl bg-[#d9f15b] text-[#17221f] shadow-[3px_3px_0_#17221f]"><ShoppingBag size={19} strokeWidth={2.5} /></span>CampusCart</span> }

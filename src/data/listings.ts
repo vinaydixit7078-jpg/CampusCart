@@ -1,0 +1,6 @@
+import type { Listing } from '../types'
+
+export const mockListings: Listing[] = [
+  { id: 'listing-demo-lamp', name: 'Study Lamp with Warm Light', category: 'Hostel Essentials', description: 'A cozy desk lamp that made late-night reading much easier.', price: 500, condition: 'Like New', productType: 'Sell', images: ['https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=85'], college: 'Riverview Institute', campus: 'North Campus', pickupLocation: 'Maple Hall lobby', status: 'Approved', createdAt: '2026-09-08T10:00:00.000Z' },
+  { id: 'listing-demo-camera', name: 'Weekend Camera Kit', category: 'Electronics', description: 'DSLR kit available for club events and weekend projects.', price: 350, condition: 'Excellent', productType: 'Rent', images: ['https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=85'], college: 'Riverview Institute', campus: 'Arts Campus', pickupLocation: 'Media lab reception', status: 'Pending Approval', createdAt: '2026-09-14T10:00:00.000Z' },
+]
